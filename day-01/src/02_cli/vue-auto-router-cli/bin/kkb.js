@@ -9,3 +9,7 @@ program.command('init <name>')
 program.parse(process.argv)
 // console.log(process.argv);
 
+program.command('refresh')
+    .description('refresh routers...')
+    .action(require('../lib/refresh'))
+

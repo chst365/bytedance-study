@@ -4,6 +4,6 @@ module.exports.clone = async function (repo, desc) {
     // const ora = require('ora')
     // const process = ora(`下载...${repo}`)
     // process.start()
-    await download()
+    await download(repo, desc)
     // process.succeed()
 }

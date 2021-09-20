@@ -27,7 +27,7 @@ module.exports = async name => {
 
     // 项目模板
     log('🚀创建项目' + name)
-    // await clone('https://github.com/su37josephxia/vue-template.git', name)
+    // await clone('github:su37josephxia/vue-template', name)
 
     // 下载依赖 npm i 
     log('🚀安装依赖...')
@@ -41,5 +41,5 @@ module.exports = async name => {
         ===================
         `))
     open('http:localhost:8080')
-    spawn('npm', ['serve'], { cwd: `./${name}` })
+    spawn('npm', ['run', 'serve'], { cwd: `./${name}` })
 }
