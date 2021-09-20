@@ -6,9 +6,10 @@ http.createServer((request, response) => {
     // response.end('Hi Node')
 
 
-    const { url, method } = request
+    const { url, method, headers } = request
+    console.log('url', url);
     if (url === '/' && method === 'get') {
-        fs.readFile('index.html', (err, data) => {
+        fs.readFile('./index.html', (err, data) => {
             if (err) {
                 response.writeHead(500, {
                     'Content-Type': 'text/plain;charset=utf-8'
@@ -21,6 +22,14 @@ http.createServer((request, response) => {
             response.setHeader('Content-Type', 'text/html')
             response.end(data)
         })
+    } else if (url === '/users' && method === 'GET') {
+        response.writeHead(200, { 'Content-Type': 'application/json' })
+        response.end(JSON.stringify({ name: 'tom' }))
+    } else if (method === 'GET' && headers.accept.indexOf('image/*')) {
+        // 所有的图片
+        // 直接用 readFile 读取 是否ok 把全部图片内容加载到服务器
+        // stream 流
+        fs.createWriteStream('.' + url).pipe(response)
     } else {
         response.statusCode = 400
         response.setHeader('Content-Type', 'text/plain;charset=utf-8')
