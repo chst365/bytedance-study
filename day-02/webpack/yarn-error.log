@@ -1,0 +1,41 @@
+Arguments: 
+  /Users/zhangzhuang/.nvm/versions/node/v16.0.0/bin/node /usr/local/bin/yarn add webpack webpack-cli htmlwebpackplugin
+
+PATH: 
+  /Users/zhangzhuang/.nvm/versions/node/v16.0.0/bin:/Users/zhangzhuang/perl5/bin:/Users/zhangzhuang/.nvm/versions/node/v12.14.0/bin:/Users/zhangzhuang/.jsvu:/Users/zhangzhuang/flutter/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin:/Users/zhangzhuang/.rvm/gems/ruby-2.6.3/bin:/Users/zhangzhuang/.rvm/gems/ruby-2.6.3@global/bin:/Users/zhangzhuang/.rvm/rubies/ruby-2.6.3/bin:/usr/local/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/zhangzhuang/perl5/bin:/Users/zhangzhuang/.nvm/versions/node/v12.14.0/bin:/Users/zhangzhuang/.jsvu:/Users/zhangzhuang/flutter/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin:/Users/zhangzhuang/.rvm/gems/ruby-2.6.3/bin:/Users/zhangzhuang/.rvm/gems/ruby-2.6.3@global/bin:/Users/zhangzhuang/.rvm/rubies/ruby-2.6.3/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/zhangzhuang/.rvm/bin:/Applications/Android Studio.app/Contents/gradle/gradle-2.10/bin:.:/Users/zhangzhuang/Downloads/apache-maven-3.6.3/bin:/Users/zhangzhuang/Library/Android/sdk/tools:/Users/zhangzhuang/Library/Android/sdk/tools/bin:/Users/zhangzhuang/Library/Android/sdk/platform-tools:/Users/zhangzhuang/Library/Android/sdk/emulator:/Users/zhangzhuang/.rvm/bin:/Applications/Android Studio.app/Contents/gradle/gradle-2.10/bin:.:/Users/zhangzhuang/Downloads/apache-maven-3.6.3/bin:/Users/zhangzhuang/Library/Android/sdk/tools:/Users/zhangzhuang/Library/Android/sdk/tools/bin:/Users/zhangzhuang/Library/Android/sdk/platform-tools:/Users/zhangzhuang/Library/Android/sdk/emulator
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  16.0.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/htmlwebpackplugin: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66830:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140464:22)
+      at Request.emit (node:events:365:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141436:10)
+      at Request.emit (node:events:365:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141358:12)
+      at Object.onceWrapper (node:events:471:28)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "webpack",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
